@@ -1,16 +1,41 @@
-# React + Vite
+# User Management Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React.js web application to view, add, edit, delete, filter, search, and sort user data using a mock backend API.
 
-Currently, two official plugins are available:
+ Features
+  View list of users with  ID, First Name, Last Name, Email, Department 
+  Add new users with client-side validation
+  Edit existing user details
+  Delete users with confirmation
+  Pagination with 10/25/50/100 rows per page
+  Filter modal to filter by first name, last name, email, department
+  Global search across name, email, department
+  Column sorting (ID, First Name, Last Name, Email, Department)
+  Responsive UI using  Tailwind CSS
+  API calls using  Axios with try/catch error handling
+ Toast notifications for success/error feedback (react-toastify)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ Tech Stack
 
-## React Compiler
+  Tailwind CSS
+  Axios
+   React Icons
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+ Setup Instructions
+1. Clone the repo  
+   ```bash
+   git clone https://github.com/<your-username>/<repo-name>.git
+   cd <repo-name>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+npm install
+
+go to the folder 
+cd my-project 
+npm run dev
+
+
+npm install axios
+
+
+npm install react-icons
