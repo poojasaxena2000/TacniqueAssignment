@@ -109,6 +109,8 @@ export default function App() {
     }
   }
 
+
+
   const handleSave = async (formData) => {
     // formData contains id when editing; ensure id types match (numbers)
     if (formData.id) {
@@ -122,6 +124,8 @@ export default function App() {
     } else {
       try {
         const res = await addUser(formData)
+
+
         // JSONPlaceholder returns id 
         const newUser = { ...formData, id: res.data.id || Date.now() }
         setUsers((prev) => [newUser, ...prev])
@@ -153,9 +157,9 @@ export default function App() {
 
       <section className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-4">
         <div className="w-full sm:w-auto">
-          <label className="block text-sm font-medium mb-1">Search User</label>
+          <label className="block text-md text-blue-500 font-medium mb-1">Search User</label>
           <input value={search} onChange={(e) => { setSearch(e.target.value); setPage(1); }} placeholder="Search by name, email or department..."
-            className="w-full sm:w-72 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200" />
+            className="w-full sm:w-72 border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200 border border-2 " />
         </div>
 
         <div className="flex items-center gap-2">

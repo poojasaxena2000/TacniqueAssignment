@@ -13,7 +13,7 @@ A responsive React.js web application to view, add, edit, delete, filter, search
   Column sorting (ID, First Name, Last Name, Email, Department)
   Responsive UI using  Tailwind CSS
   API calls using  Axios with try/catch error handling
- Toast notifications for success/error feedback (react-toastify)
+
 
  Tech Stack
 
@@ -25,8 +25,8 @@ A responsive React.js web application to view, add, edit, delete, filter, search
  Setup Instructions
 1. Clone the repo  
    ```bash
-   git clone https://github.com/<your-username>/<repo-name>.git
-   cd <repo-name>
+   git clone https://github.com/poojasaxena2000/TacniqueAssignment
+   
 
 npm install
 
